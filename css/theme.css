@@ -15998,6 +15998,7 @@ label {
   box-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
   color: #5e6e82;
   opacity: 0;
+  z-index: 999;
 }
 
 .slick-slider .slick-arrow:before {
