@@ -47,11 +47,12 @@
           h = t(191),
           E = t(671),
           f = t(107),
-          y = t(1081),
-          v = t.n(y),
-          N = t(1082),
-          A = t.n(N),
-          x = function(a) {
+          y = t(69),
+          v = t(1081),
+          N = t.n(v),
+          A = t(1082),
+          x = t.n(A),
+          w = function(a) {
             var t = a.isOpen,
               n = a.toggleModal,
               o = Object(l.useRef)(null);
@@ -92,9 +93,9 @@
             s = a[1],
             i = Object(l.useState)(''),
             c = Object(n.a)(i, 2),
-            y = c[0],
-            N = c[1],
-            w = function() {
+            v = c[0],
+            A = c[1],
+            T = function() {
               return s(!t);
             };
           return r.a.createElement(
@@ -109,7 +110,7 @@
                 r.a.createElement(
                   b.a,
                   { xs: 7, md: 5 },
-                  r.a.createElement('img', { className: 'img-fluid', src: v.a, alt: '' })
+                  r.a.createElement('img', { className: 'img-fluid', src: N.a, alt: '' })
                 )
               ),
               r.a.createElement(
@@ -134,7 +135,16 @@
                     m.a,
                     {
                       onSubmit: function(e) {
-                        e.preventDefault(), console.log('Send invitation to '.concat(y));
+                        e.preventDefault(),
+                          y.c.success(
+                            r.a.createElement(
+                              l.Fragment,
+                              null,
+                              'Send invitation to ',
+                              r.a.createElement('span', { className: 'font-weight-semi-bold font-italic' }, v)
+                            )
+                          ),
+                          A('');
                       }
                     },
                     r.a.createElement(
@@ -147,10 +157,10 @@
                           type: 'email',
                           placeholder: 'Email address',
                           'aria-label': "Recipient's username",
-                          value: y,
+                          value: v,
                           onChange: function(e) {
                             var a = e.target;
-                            return N(a.value);
+                            return A(a.value);
                           },
                           autoFocus: !0
                         })
@@ -185,7 +195,7 @@
                     r.a.createElement(
                       h.a,
                       { color: 'falcon-default', block: !0, className: 'mb-2 mb-xl-0' },
-                      r.a.createElement('img', { src: A.a, width: '20', alt: '' }),
+                      r.a.createElement('img', { src: x.a, width: '20', alt: '' }),
                       r.a.createElement('span', { className: 'font-weight-medium ml-2' }, 'Invite from Gmail')
                     )
                   ),
@@ -194,10 +204,10 @@
                     { xl: 4 },
                     r.a.createElement(
                       f.a,
-                      { color: 'falcon-default', block: !0, icon: 'link', className: 'mb-2 mb-xl-0', onClick: w },
+                      { color: 'falcon-default', block: !0, icon: 'link', className: 'mb-2 mb-xl-0', onClick: T },
                       r.a.createElement('span', { className: 'font-weight-medium ml-1' }, 'Copy Link')
                     ),
-                    r.a.createElement(x, { isOpen: t, toggleModal: w })
+                    r.a.createElement(w, { isOpen: t, toggleModal: T })
                   ),
                   r.a.createElement(
                     b.a,
@@ -950,8 +960,8 @@
         H = t(47),
         R = t(27),
         U = t(675),
-        Q = t(676),
-        z = t(677),
+        z = t(676),
+        Q = t(677),
         K = t(678),
         J = t(673),
         Y = t(204),
@@ -1435,9 +1445,9 @@
             l.a.createElement(
               U.a,
               null,
-              l.a.createElement(Q.a, { caret: !0, color: 'link', size: 'sm', className: 'pl-0' }, 'Change plan'),
+              l.a.createElement(z.a, { caret: !0, color: 'link', size: 'sm', className: 'pl-0' }, 'Change plan'),
               l.a.createElement(
-                z.a,
+                Q.a,
                 { className: 'py-0', style: { minWidth: '15rem' } },
                 l.a.createElement(
                   'div',
@@ -1911,12 +1921,12 @@
                           U.a,
                           { className: 'd-inline-block ml-2' },
                           l.a.createElement(
-                            Q.a,
+                            z.a,
                             { color: 'falcon-default', size: 'sm' },
                             l.a.createElement(R.a, { icon: 'ellipsis-h' })
                           ),
                           l.a.createElement(
-                            z.a,
+                            Q.a,
                             null,
                             l.a.createElement(K.a, null, 'Edit'),
                             l.a.createElement(K.a, null, 'Report'),
@@ -2149,8 +2159,8 @@
         },
         Re = t(862),
         Ue = t(873),
-        Qe = t(1057),
-        ze = {
+        ze = t(1057),
+        Qe = {
           Default: [
             { featureType: 'water', elementType: 'geometry', stylers: [{ color: '#e9e9e9' }, { lightness: 17 }] },
             { featureType: 'landscape', elementType: 'geometry', stylers: [{ color: '#f5f5f5' }, { lightness: 20 }] },
@@ -2473,16 +2483,16 @@
             'div',
             { className: ee()('position-relative', t) },
             l.a.createElement(
-              Qe.Map,
-              Object.assign({ styles: ze[a] }, o),
-              l.a.createElement(Qe.Marker, {
+              ze.Map,
+              Object.assign({ styles: Qe[a] }, o),
+              l.a.createElement(ze.Marker, {
                 onClick: function(e, a) {
                   m(a), g(!0);
                 }
               }),
               r &&
                 l.a.createElement(
-                  Qe.InfoWindow,
+                  ze.InfoWindow,
                   {
                     marker: c,
                     onClose: function() {
@@ -2496,7 +2506,7 @@
           );
         };
       Ke.defaultProps = { zoom: 17, mapStyle: 'Default' };
-      var Je = Object(Qe.GoogleApiWrapper)({ apiKey: 'AIzaSyARdVcREeBK44lIWnv5-iPijKqvlSAVwbw' })(Ke),
+      var Je = Object(ze.GoogleApiWrapper)({ apiKey: 'AIzaSyARdVcREeBK44lIWnv5-iPijKqvlSAVwbw' })(Ke),
         Ye = t(852),
         Ve = function(e) {
           var a = e.month,
@@ -2957,9 +2967,9 @@
             q = Object(n.useState)(''),
             R = Object(H.a)(q, 2),
             U = R[0],
-            Q = R[1],
-            z = Object(n.useState)(''),
-            K = Object(H.a)(z, 2),
+            z = R[1],
+            Q = Object(n.useState)(''),
+            K = Object(H.a)(Q, 2),
             Y = K[0],
             Z = K[1],
             _ = Object(n.useState)(''),
@@ -3111,7 +3121,7 @@
                     value: U,
                     onChange: function(e) {
                       var a = e.target;
-                      return Q(a.value);
+                      return z(a.value);
                     }
                   })
                 ),
@@ -3865,9 +3875,9 @@
             q = L[0],
             R = L[1],
             U = Object(n.useState)('public'),
-            Q = Object(H.a)(U, 2),
-            z = Q[0],
-            K = Q[1],
+            z = Object(H.a)(U, 2),
+            Q = z[0],
+            K = z[1],
             J = Object(n.useState)(!0),
             W = Object(H.a)(J, 2),
             X = W[0],
@@ -3948,7 +3958,7 @@
                   name: 'customRadio',
                   label: l.a.createElement('strong', null, 'Public page:'),
                   value: 'public',
-                  checked: 'public' === z,
+                  checked: 'public' === Q,
                   onChange: function(e) {
                     var a = e.target;
                     return K(a.value);
@@ -3969,7 +3979,7 @@
                   name: 'customRadio',
                   label: l.a.createElement('strong', null, 'Private page:'),
                   value: 'private',
-                  checked: 'private' === z,
+                  checked: 'private' === Q,
                   onChange: function(e) {
                     var a = e.target;
                     return K(a.value);
@@ -4241,7 +4251,7 @@
             l.a.createElement(i.a, { xs: 12 }, l.a.createElement('hr', null))
           );
         },
-        Qa = function() {
+        za = function() {
           var e = Object(n.useState)(0),
             a = Object(H.a)(e, 2),
             t = a[0],
@@ -4489,7 +4499,7 @@
             )
           );
         },
-        za = t(1080),
+        Qa = t(1080),
         Ka = t(202),
         Ja = t(190),
         Ya = t(192),
@@ -4737,8 +4747,8 @@
         Ht = t.n(qt),
         Rt = t(1096),
         Ut = t.n(Rt),
-        Qt = t(1097),
-        zt = t.n(Qt),
+        zt = t(1097),
+        Qt = t.n(zt),
         Kt = t(1098),
         Jt = t.n(Kt),
         Yt = [
@@ -4904,7 +4914,7 @@
             institutionLink: '#!'
           },
           {
-            avatarSrc: zt.a,
+            avatarSrc: Qt.a,
             name: 'Gemma Whelan',
             institution: 'Chamber Music Society',
             profileLink: '/pages/profile',
@@ -5721,7 +5731,7 @@
         };
       Rn.defaultProps = { divider: !0, verified: !1 };
       var Un = Rn,
-        Qn = function(e) {
+        zn = function(e) {
           var a = e.id,
             t = e.label,
             n = e.type,
@@ -5747,7 +5757,7 @@
             )
           );
         },
-        zn = function(e) {
+        Qn = function(e) {
           var a = e.educations,
             t = e.setEducations,
             r = Object(n.useState)(''),
@@ -5798,7 +5808,7 @@
                   t([n].concat(Object(pa.a)(a))), m(''), g(''), y(''), x(''), k(!1), I(''), D('');
                 }
               },
-              l.a.createElement(Qn, {
+              l.a.createElement(zn, {
                 id: 'school',
                 label: 'School',
                 value: c,
@@ -5807,7 +5817,7 @@
                   return m(a.value);
                 }
               }),
-              l.a.createElement(Qn, {
+              l.a.createElement(zn, {
                 id: 'degree',
                 label: 'Degree',
                 value: u,
@@ -5816,7 +5826,7 @@
                   return g(a.value);
                 }
               }),
-              l.a.createElement(Qn, {
+              l.a.createElement(zn, {
                 id: 'field',
                 label: 'Field',
                 value: f,
@@ -5825,7 +5835,7 @@
                   return y(a.value);
                 }
               }),
-              l.a.createElement(Qn, {
+              l.a.createElement(zn, {
                 id: 'location',
                 label: 'Location',
                 value: A,
@@ -5857,7 +5867,7 @@
                   )
                 )
               ),
-              l.a.createElement(Qn, {
+              l.a.createElement(zn, {
                 id: 'educationFrom',
                 label: 'From',
                 value: j,
@@ -5866,7 +5876,7 @@
                 timeFormat: !1
               }),
               !C &&
-                l.a.createElement(Qn, {
+                l.a.createElement(zn, {
                   id: 'educationTo',
                   label: 'To',
                   value: O,
@@ -5918,7 +5928,7 @@
                   l.a.createElement(
                     Hn.a,
                     { toggler: '#togglerAddEducation' },
-                    l.a.createElement(zn, { educations: m, setEducations: d }),
+                    l.a.createElement(Qn, { educations: m, setEducations: d }),
                     l.a.createElement('hr', { className: 'border-dashed border-bottom-0 my-4' })
                   )
                 ),
@@ -7062,8 +7072,8 @@
           );
         },
         Ul = t(1114),
-        Ql = t.n(Ul),
-        zl = function() {
+        zl = t.n(Ul),
+        Ql = function() {
           return l.a.createElement(
             r.a,
             null,
@@ -7073,7 +7083,7 @@
               l.a.createElement(
                 s.a,
                 { className: 'align-items-center justify-content-between' },
-                l.a.createElement(i.a, { lg: 6 }, l.a.createElement('img', { src: Ql.a, alt: '' })),
+                l.a.createElement(i.a, { lg: 6 }, l.a.createElement('img', { src: zl.a, alt: '' })),
                 l.a.createElement(
                   i.a,
                   { lg: 6, className: 'pl-lg-4 my-5 text-center text-lg-left' },
@@ -7133,100 +7143,177 @@
             null,
             l.a.createElement(
               ue,
-              {
-                title: 'Getting Started',
-                description:
-                  "Hello, I hope you find this template useful. Falcon React has been crafted on top of Bootstrap 4 and React. The included docs don't replace the official ones, but provide a clear view of all extended styles and new components that this template provides on top of Bootstrap 4.",
-                className: 'mb-3'
-              },
+              { title: 'Getting Started', className: 'mb-3' },
               l.a.createElement(
                 'p',
-                null,
-                'The docs includes information to understand how the theme is organized, how to make changes to the source code, and how to compile and extend it to fit your needs.'
-              ),
-              l.a.createElement('p', { className: 'mb-0' }, 'Thanks, and good luck!')
+                { className: 'mt-2 mb-0' },
+                'Welcome to the ReactJS version of the',
+                ' ',
+                l.a.createElement(
+                  'a',
+                  {
+                    href: 'https://themes.getbootstrap.com/product/falcon-admin-dashboard-webapp-template/',
+                    target: '_blank',
+                    rel: 'noopener noreferrer'
+                  },
+                  'original Falcon theme'
+                ),
+                '. This doc will guide you to understand how ',
+                l.a.createElement('strong', null, 'Falcon-React'),
+                ' theme is organized, basics of how to customize, and how to compile from the source code if you want.'
+              )
             ),
             l.a.createElement(
               r.a,
               { className: 'mb-3' },
-              l.a.createElement(u.a, { title: 'Quick start' }),
+              l.a.createElement(u.a, { title: 'Running in Local environment' }),
               l.a.createElement(
                 o.a,
                 null,
                 l.a.createElement(
                   'p',
                   null,
-                  'This project was bootstrapped with',
+                  'This project is scaffolded using',
                   ' ',
                   l.a.createElement(
                     'a',
                     { href: 'https://create-react-app.dev', target: '_blank', rel: 'noopener noreferrer' },
                     'Create React App'
                   ),
-                  ". You'll need to install",
-                  ' ',
-                  l.a.createElement(
-                    'a',
-                    { href: 'https://nodejs.org', target: '_blank', rel: 'noopener noreferrer' },
-                    'Node.js'
-                  ),
-                  ' ',
-                  'before using Falcon React.'
-                ),
-                l.a.createElement(
-                  'p',
-                  null,
-                  'Once ',
-                  l.a.createElement('code', null, 'Node.js'),
-                  ' is installed, run ',
-                  l.a.createElement('code', null, 'npm i'),
-                  " to install the rest of Falcon React's dependencies. All dependencies will be downloaded to the ",
-                  l.a.createElement('code', null, 'node_modules'),
-                  ' directory.'
-                ),
-                l.a.createElement(
-                  'p',
-                  null,
-                  "Now you're ready to modify the source files and generate new ",
-                  l.a.createElement('code', null, 'build/'),
-                  ' files. Falcon is using webpack and ',
-                  l.a.createElement('code', null, 'webpack-serve'),
-                  ' to automatically detect file changes and start a local webserver at',
-                  ' ',
-                  l.a.createElement('code', null, 'http://localhost:3000'),
                   '.'
                 ),
-                l.a.createElement('code', null, 'npm start')
+                l.a.createElement(
+                  'ol',
+                  { className: 'mb-0 pl-card' },
+                  l.a.createElement(
+                    'li',
+                    null,
+                    'Install',
+                    ' ',
+                    l.a.createElement(
+                      'a',
+                      { href: 'https://nodejs.org', target: '_blank', rel: 'noopener noreferrer' },
+                      'Node.js'
+                    ),
+                    ' ',
+                    'if you do not already have it installed on your machine.'
+                  ),
+                  l.a.createElement(
+                    'li',
+                    null,
+                    'Open the \u201cfalcon-react\u201d directory with your cmd or terminal'
+                  ),
+                  l.a.createElement(
+                    'li',
+                    null,
+                    'Run ',
+                    l.a.createElement('code', null, 'npm i'),
+                    l.a.createElement('br', null),
+                    'This command will download all the necessary dependencies for falcon in the ',
+                    l.a.createElement('code', null, 'node_modules'),
+                    ' ',
+                    'directory.'
+                  ),
+                  l.a.createElement(
+                    'li',
+                    null,
+                    'Run ',
+                    l.a.createElement('code', null, 'npm start'),
+                    l.a.createElement('br', null),
+                    'A local web server will start at ',
+                    l.a.createElement('code', null, 'http://localhost:3000'),
+                    '.',
+                    l.a.createElement('br', null),
+                    'We are using webpack and webpack-serve to automatically detect file changes. So, if you edit and save a file, your browser will automatically refresh and preview the change.'
+                  )
+                )
               )
             ),
             l.a.createElement(
               r.a,
               { className: 'mb-3' },
-              l.a.createElement(u.a, { title: 'Build tools' }),
+              l.a.createElement(u.a, { title: 'Creating a Production Build' }),
               l.a.createElement(
                 o.a,
                 null,
                 l.a.createElement(
                   'p',
                   null,
-                  'Start a local web server at ',
-                  l.a.createElement('code', null, 'http://localhost:3000'),
-                  ' and detect file changes:'
+                  'After you done your customization, when you are ready to build, Run ',
+                  l.a.createElement('code', null, 'npm run build'),
+                  ' command in your project directory to make the Production build.'
                 ),
                 l.a.createElement(
                   'p',
                   null,
-                  'The docs includes information to understand how the theme is organized, how to make changes to the source code, and how to compile and extend it to fit your needs.'
+                  'This will create an optimized production build by compililing, merging and minifying all the source files as necessary and put them in the ',
+                  l.a.createElement('code', null, 'build/'),
+                  ' folder.'
                 ),
-                l.a.createElement('code', null, 'npm i'),
                 l.a.createElement(
                   'p',
-                  { className: 'mt-3' },
-                  'Compile, optimize, minify and uglify all source files to ',
-                  l.a.createElement('code', null, 'build/'),
-                  ':'
+                  null,
+                  'You can run ',
+                  l.a.createElement('code', null, 'node server.js'),
+                  ' to run the production build locally at',
+                  ' ',
+                  l.a.createElement('code', null, 'http://localhost:5000'),
+                  '.'
+                )
+              )
+            ),
+            l.a.createElement(
+              r.a,
+              { className: 'mb-3' },
+              l.a.createElement(u.a, { title: 'Compiling SCSS' }),
+              l.a.createElement(
+                o.a,
+                null,
+                l.a.createElement(
+                  'p',
+                  null,
+                  'Run ',
+                  l.a.createElement('code', null, 'npm run scss'),
+                  ' command in your project directory to compile scss. This will compile all the SCSS files from ',
+                  l.a.createElement('code', null, 'src/assets/scss/'),
+                  ' directory and generate ',
+                  l.a.createElement('code', null, 'theme.css'),
+                  ',',
+                  ' ',
+                  l.a.createElement('code', null, 'theme.css.map'),
+                  ', ',
+                  l.a.createElement('code', null, 'theme-rtl.css'),
+                  ', ',
+                  l.a.createElement('code', null, 'theme-rtl.css.map'),
+                  ' files in',
+                  ' ',
+                  l.a.createElement('code', null, 'public/css/'),
+                  ' directory. Start your customization,',
+                  ' ',
+                  l.a.createElement('strong', null, 'reload your browser to see the changes'),
+                  '.'
                 ),
-                l.a.createElement('code', null, 'npm start')
+                l.a.createElement(
+                  'p',
+                  null,
+                  'You can add your own SCSS and override the theme style in the ',
+                  l.a.createElement('code', null, '_user.scss'),
+                  ' file.'
+                ),
+                l.a.createElement(
+                  'p',
+                  { className: 'mb-0' },
+                  'To make broader changes to the design of the theme, such as changing the color scheme or font sizes, use',
+                  ' ',
+                  l.a.createElement('code', null, 'src/assets/scss/_user-variables.scss'),
+                  '. Any variable from',
+                  ' ',
+                  l.a.createElement('code', null, 'node_modules/bootstrap/scss/_variables.scss'),
+                  ' or ',
+                  l.a.createElement('code', null, 'src/assets/scss/theme/_variables.scss'),
+                  ' ',
+                  'can be overridden with your own value.'
+                )
               )
             ),
             l.a.createElement(
@@ -7247,7 +7334,7 @@
                   l.a.createElement(
                     'pre',
                     null,
-                    '\ntheme/\n  \u251c\u2500\u2500 .gitignore\n  \u251c\u2500\u2500 package.json\n  \u251c\u2500\u2500 package-lock.json\n  \u251c\u2500\u2500 README.md\n  \u251c\u2500\u2500 build/\n  \u251c\u2500\u2500 public/\n  \u2502   \u251c\u2500\u2500 index.html\n  \u2502   \u2514\u2500\u2500 manifest.json\n  \u2514\u2500\u2500 src/\n      \u251c\u2500\u2500 assets/\n      \u2502   \u251c\u2500\u2500 img/\n      \u2502   \u2514\u2500\u2500 scss/\n      \u251c\u2500\u2500 components/\n      \u251c\u2500\u2500 contex/\n      \u251c\u2500\u2500 data/\n      \u251c\u2500\u2500 helpers/\n      \u251c\u2500\u2500 hooks/\n      \u251c\u2500\u2500 layouts/\n      \u251c\u2500\u2500 App.js\n      \u251c\u2500\u2500 index.js\n      \u2514\u2500\u2500 Main.js\n'
+                    '\ntheme/\n  \u251c\u2500\u2500 .browserslistrc\n  \u251c\u2500\u2500 .env\n  \u251c\u2500\u2500 .eslintrc.json\n  \u251c\u2500\u2500 .gitignore\n  \u251c\u2500\u2500 .gitlab-ci.yml\n  \u251c\u2500\u2500 .prettierrc\n  \u251c\u2500\u2500 gulpfile.js\n  \u251c\u2500\u2500 package.json\n  \u251c\u2500\u2500 package-lock.json\n  \u251c\u2500\u2500 README.md\n  \u251c\u2500\u2500 build/\n  \u251c\u2500\u2500 public/\n  \u2502   \u251c\u2500\u2500 css/\n  \u2502   \u251c\u2500\u2500 favicon.ico\n  \u2502   \u251c\u2500\u2500 index.html\n  \u2502   \u2514\u2500\u2500 manifest.json\n  \u2514\u2500\u2500 src/\n      \u251c\u2500\u2500 assets/\n      \u2502   \u251c\u2500\u2500 img/\n      \u2502   \u251c\u2500\u2500 scss/\n      \u2502   \u2514\u2500\u2500 video/\n      \u251c\u2500\u2500 components/\n      \u251c\u2500\u2500 contex/\n      \u251c\u2500\u2500 data/\n      \u251c\u2500\u2500 helpers/\n      \u251c\u2500\u2500 hoc/\n      \u251c\u2500\u2500 hooks/\n      \u251c\u2500\u2500 layouts/\n      \u251c\u2500\u2500 App.js\n      \u251c\u2500\u2500 config.js\n      \u251c\u2500\u2500 index.js\n      \u251c\u2500\u2500 Main.js\n      \u2514\u2500\u2500 routes.js\n'
                   )
                 )
               )
@@ -7260,8 +7347,8 @@
         Vl = t(1),
         Wl = t.n(Vl),
         Xl = t(32),
-        Zl = t(1921),
-        _l = t(1920),
+        Zl = t(1922),
+        _l = t(1919),
         $l = t(1117),
         er = t.n($l),
         ar = (t(884),
@@ -9241,7 +9328,7 @@
             )
           );
         },
-        Qr = function() {
+        zr = function() {
           return l.a.createElement(
             n.Fragment,
             null,
@@ -9351,7 +9438,7 @@
             )
           );
         },
-        zr = function() {
+        Qr = function() {
           return l.a.createElement(
             n.Fragment,
             null,
@@ -9490,7 +9577,7 @@
                 { className: 'bg-light' },
                 l.a.createElement(tr, {
                   code:
-                    'function popoversExample() {\n  const [isOpenLeft, setIsOpenLeft] = useState(false);\n  const [isOpenRight, setIsOpenRight] = useState(false);\n  const [isOpenTop, setIsOpenTop] = useState(false);\n  const [isOpenBottom, setIsOpenBottom] = useState(false);\n  \n  return(\n    <Fragment>\n      <Button id="Popover1" className="mr-2" type="button">\n        Popover on left\n      </Button>\n      <Popover \n        placement="left" \n        isOpen={isOpenLeft} \n        target="Popover1" \n        toggle={() => setIsOpenLeft(!isOpenLeft)}\n      >\n        <PopoverHeader>Popover Title</PopoverHeader>\n        <PopoverBody>Vivamus sagittis lacus vel augue laoreet rutrum faucibus.</PopoverBody>\n      </Popover>\n\n      <Button id="Popover2" className="mr-2" type="button">\n        Popover on right\n      </Button>\n      <Popover \n        placement="right" \n        isOpen={isOpenRight} \n        target="Popover2" \n        toggle={() => setIsOpenRight(!isOpenRight)}\n      >\n        <PopoverHeader>Popover Title</PopoverHeader>\n        <PopoverBody>Vivamus sagittis lacus vel augue laoreet rutrum faucibus.</PopoverBody>\n      </Popover>\n\n      <Button id="Popover3" className="mr-2" type="button">\n        Popover on top\n      </Button>\n      <Popover \n        placement="top" \n        isOpen={isOpenTop} \n        target="Popover3" \n        toggle={() => setIsOpenTop(!isOpenTop)}\n      >\n        <PopoverHeader>Popover Title</PopoverHeader>\n        <PopoverBody>Vivamus sagittis lacus vel augue laoreet rutrum faucibus.</PopoverBody>\n      </Popover>\n\n      <Button id="Popover4" type="button">\n        Popover on Bottom\n      </Button>\n      <Popover\n        placement="bottom"\n        isOpen={isOpenBottom}\n        target="Popover4"\n        toggle={() => setIsOpenBottom(!isOpenBottom)}\n      >\n        <PopoverHeader>Popover Title</PopoverHeader>\n        <PopoverBody>Vivamus sagittis lacus vel augue laoreet rutrum faucibus.</PopoverBody>\n      </Popover>\n     </Fragment>\n  );\n}',
+                    'function popoversExample() {\n  const [isOpenLeft, setIsOpenLeft] = useState(false);\n  const [isOpenRight, setIsOpenRight] = useState(false);\n  const [isOpenTop, setIsOpenTop] = useState(false);\n  const [isOpenBottom, setIsOpenBottom] = useState(false);\n  \n  return(\n    <Fragment>\n      <Button id="Popover3" className="mr-2" type="button">\n        Popover on top\n      </Button>\n      <Popover \n        placement="top" \n        isOpen={isOpenTop} \n        target="Popover3" \n        toggle={() => setIsOpenTop(!isOpenTop)}\n      >\n        <PopoverHeader>Popover Title</PopoverHeader>\n        <PopoverBody>Vivamus sagittis lacus vel augue laoreet rutrum faucibus.</PopoverBody>\n      </Popover>\n\n      <Button id="Popover4" className="mr-2" type="button">\n        Popover on Bottom\n      </Button>\n      <Popover\n        placement="bottom"\n        isOpen={isOpenBottom}\n        target="Popover4"\n        toggle={() => setIsOpenBottom(!isOpenBottom)}\n      >\n        <PopoverHeader>Popover Title</PopoverHeader>\n        <PopoverBody>Vivamus sagittis lacus vel augue laoreet rutrum faucibus.</PopoverBody>\n      </Popover>\n      \n      <Button id="Popover1" className="mr-2" type="button">\n        Popover on left\n      </Button>\n      \n      <Popover \n        placement="left" \n        isOpen={isOpenLeft} \n        target="Popover1" \n        toggle={() => setIsOpenLeft(!isOpenLeft)}\n      >\n        <PopoverHeader>Popover Title</PopoverHeader>\n        <PopoverBody>Vivamus sagittis lacus vel augue laoreet rutrum faucibus.</PopoverBody>\n      </Popover>\n\n      <Button id="Popover2" type="button">\n        Popover on right\n      </Button>\n      <Popover \n        placement="right" \n        isOpen={isOpenRight} \n        target="Popover2" \n        toggle={() => setIsOpenRight(!isOpenRight)}\n      >\n        <PopoverHeader>Popover Title</PopoverHeader>\n        <PopoverBody>Vivamus sagittis lacus vel augue laoreet rutrum faucibus.</PopoverBody>\n      </Popover>\n     </Fragment>\n  );\n}',
                   language: 'jsx'
                 })
               )
@@ -9828,7 +9915,7 @@
                 { className: 'bg-light' },
                 l.a.createElement(tr, {
                   code:
-                    'function tooltipsExampleCode() {\n  const [isOpenLeft, setIsOpenLeft] = useState(false);\n  const [isOpenRight, setIsOpenRight] = useState(false);\n  const [isOpenTop, setIsOpenTop] = useState(false);\n  const [isOpenBottom, setIsOpenBottom] = useState(false);\n  \n  return (\n    <Fragment>\n      <Button className="m-1 btn-sm" color="secondary" id="pop1">\n         Tooltip on left\n      </Button>\n      <Tooltip \n        placement="left" \n        isOpen={isOpenLeft} \n        target="pop1" \n        toggle={() => setIsOpenLeft(!isOpenLeft)}\n      >\n         Tooltip on left\n      </Tooltip>\n      \n      <Button className="m-1 btn-sm" color="secondary" id="pop2">\n       Tooltip on right\n      </Button>\n      <Tooltip \n        placement="right" \n        isOpen={isOpenRight} \n        target="pop2" \n        toggle={() => setIsOpenRight(!isOpenRight)}\n      >\n        Tooltip on right\n      </Tooltip>\n      \n      <Button className="m-1 btn-sm" color="secondary" id="pop3">\n         Tooltip on top\n      </Button>\n      <Tooltip \n        placement="top" \n        isOpen={isOpenTop} \n        target="pop3" \n        toggle={() => setIsOpenTop(!isOpenTop)}>\n         Tooltip on top\n      </Tooltip>\n      \n      <Button className="m-1 btn-sm" color="secondary" id="pop4">\n        Tooltip on bottom\n      </Button>\n      <Tooltip \n        placement="bottom" \n        isOpen={isOpenBottom} \n        target="pop4" \n        toggle={() => setIsOpenBottom(!isOpenBottom)}\n      >\n        Tooltip on bottom\n      </Tooltip>\n    </Fragment>\n  );\n}',
+                    'function tooltipsExampleCode() {\n  const [isOpenLeft, setIsOpenLeft] = useState(false);\n  const [isOpenRight, setIsOpenRight] = useState(false);\n  const [isOpenTop, setIsOpenTop] = useState(false);\n  const [isOpenBottom, setIsOpenBottom] = useState(false);\n  \n  return (\n    <Fragment>\n      <Button size="sm" color="secondary" className="m-1" id="pop3">\n         Tooltip on top\n      </Button>\n      <Tooltip \n        placement="top" \n        isOpen={isOpenTop} \n        target="pop3" \n        toggle={() => setIsOpenTop(!isOpenTop)}>\n         Tooltip on top\n      </Tooltip>\n      \n      <Button size="sm" color="secondary" className="m-1" id="pop4">\n        Tooltip on bottom\n      </Button>\n      <Tooltip \n        placement="bottom" \n        isOpen={isOpenBottom} \n        target="pop4" \n        toggle={() => setIsOpenBottom(!isOpenBottom)}\n        container=\'.content\'\n      >\n        Tooltip on bottom\n      </Tooltip>\n      \n      \n      <Button size="sm" color="secondary" className="m-1" id="pop1">\n         Tooltip on left\n      </Button>\n      <Tooltip \n        placement="left" \n        isOpen={isOpenLeft} \n        target="pop1" \n        toggle={() => setIsOpenLeft(!isOpenLeft)}\n      >\n         Tooltip on left\n      </Tooltip>\n      \n      <Button size="sm" color="secondary" className="m-1" id="pop2">\n       Tooltip on right\n      </Button>\n      <Tooltip \n        placement="right" \n        isOpen={isOpenRight} \n        target="pop2" \n        toggle={() => setIsOpenRight(!isOpenRight)}\n      >\n        Tooltip on right\n      </Tooltip>\n    </Fragment>\n  );\n}',
                   language: 'jsx'
                 })
               )
@@ -12656,15 +12743,15 @@
           l.a.createElement(Mo.b, { path: '/pages/event-create', exact: !0, component: Fa }),
           l.a.createElement(Mo.b, { path: '/pages/events', exact: !0, component: Da }),
           l.a.createElement(Mo.b, { path: '/pages/faq', exact: !0, component: Ma }),
-          l.a.createElement(Mo.b, { path: '/pages/invoice', exact: !0, component: Qa }),
-          l.a.createElement(Mo.b, { path: '/pages/invite-people', exact: !0, component: za.a }),
+          l.a.createElement(Mo.b, { path: '/pages/invoice', exact: !0, component: za }),
+          l.a.createElement(Mo.b, { path: '/pages/invite-people', exact: !0, component: Qa.a }),
           l.a.createElement(Mo.b, { path: '/pages/notifications', exact: !0, component: Wa }),
           l.a.createElement(Mo.b, { path: '/pages/people', exact: !0, component: Wt }),
           l.a.createElement(Mo.b, { path: '/pages/pricing', exact: !0, component: rn }),
           l.a.createElement(Mo.b, { path: '/pages/pricing-alt', exact: !0, component: bn }),
           l.a.createElement(Mo.b, { path: '/pages/profile', exact: !0, component: Il }),
           l.a.createElement(Mo.b, { path: '/pages/settings', exact: !0, component: Rl }),
-          l.a.createElement(Mo.b, { path: '/pages/starter', exact: !0, component: zl }),
+          l.a.createElement(Mo.b, { path: '/pages/starter', exact: !0, component: Ql }),
           l.a.createElement(Mo.b, { path: '/documentation', exact: !0, component: Yl }),
           l.a.createElement(Mo.b, { path: '/components/alerts', exact: !0, component: nr }),
           l.a.createElement(Mo.b, { path: '/components/accordions', exact: !0, component: rr }),
@@ -12680,8 +12767,8 @@
           l.a.createElement(Mo.b, { path: '/components/listgroups', exact: !0, component: Hr }),
           l.a.createElement(Mo.b, { path: '/components/modals', exact: !0, component: Rr }),
           l.a.createElement(Mo.b, { path: '/components/navs', exact: !0, component: Ur }),
-          l.a.createElement(Mo.b, { path: '/components/navbars', exact: !0, component: Qr }),
-          l.a.createElement(Mo.b, { path: '/components/pageheaders', exact: !0, component: zr }),
+          l.a.createElement(Mo.b, { path: '/components/navbars', exact: !0, component: zr }),
+          l.a.createElement(Mo.b, { path: '/components/pageheaders', exact: !0, component: Qr }),
           l.a.createElement(Mo.b, { path: '/components/paginations', exact: !0, component: Kr }),
           l.a.createElement(Mo.b, { path: '/components/popovers', exact: !0, component: Jr }),
           l.a.createElement(Mo.b, { path: '/components/progress', exact: !0, component: Vr }),

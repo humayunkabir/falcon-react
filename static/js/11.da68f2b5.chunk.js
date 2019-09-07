@@ -27,8 +27,8 @@
       a.r(t);
       var n = a(0),
         c = a.n(n),
-        r = a(67),
-        l = a(20),
+        l = a(67),
+        r = a(20),
         s = a(701),
         o = a(741),
         i = a(47),
@@ -42,9 +42,9 @@
         E = function(e) {
           return function(t) {
             var a = Object(n.useState)(null),
-              r = Object(i.a)(a, 2),
-              s = r[0],
-              o = r[1];
+              l = Object(i.a)(a, 2),
+              s = l[0],
+              o = l[1];
             return c.a.createElement(
               m.a,
               { fluid: !0 },
@@ -68,7 +68,7 @@
                           d.a,
                           { className: 'bg-split-card-header bg-circle-shape text-center p-2' },
                           c.a.createElement(
-                            l.b,
+                            r.b,
                             {
                               className:
                                 'text-white text-sans-serif font-weight-extra-bold fs-4 z-index-1 position-relative',
@@ -112,7 +112,7 @@
                   'p',
                   { className: 'mb-0 fs--1' },
                   c.a.createElement('span', { className: 'font-weight-semi-bold' }, 'New User? '),
-                  c.a.createElement(l.b, { to: '/authentication/split/register' }, 'Create account')
+                  c.a.createElement(r.b, { to: '/authentication/split/register' }, 'Create account')
                 )
               ),
               c.a.createElement(o.a, { layout: 'split', hasLabel: !0 })
@@ -161,7 +161,7 @@
                   'p',
                   { className: 'mb-0 fs--1' },
                   c.a.createElement('span', { className: 'font-weight-semi-bold' }, 'Already User? '),
-                  c.a.createElement(l.b, { to: '/authentication/split/login' }, 'Login')
+                  c.a.createElement(r.b, { to: '/authentication/split/login' }, 'Login')
                 )
               ),
               c.a.createElement(O.a, { layout: 'split', hasLabel: !0 })
@@ -185,19 +185,19 @@
               { className: 'text-center' },
               c.a.createElement('h4', { className: 'mb-0' }, ' Forgot your password?'),
               c.a.createElement('small', null, "Enter your email and we'll send you a reset link."),
-              c.a.createElement(L.a, { redirectUrl: '/authentication/split/confirm-mail' })
+              c.a.createElement(L.a, { layout: 'split' })
             )
           );
         }),
         F = a(800),
-        U = a(1047),
-        C = a.n(U),
-        J = E(function(e) {
+        C = a(1047),
+        J = a.n(C),
+        R = E(function(e) {
           var t = e.setBgProps;
           return (
             Object(n.useEffect)(
               function() {
-                return t({ image: C.a });
+                return t({ image: J.a });
               },
               [t]
             ),
@@ -209,7 +209,7 @@
             )
           );
         }),
-        R = a(801),
+        U = a(801),
         A = a(1048),
         G = a.n(A),
         H = E(function(e) {
@@ -224,7 +224,7 @@
             c.a.createElement(
               'div',
               { className: 'text-center' },
-              c.a.createElement(R.a, { email: 'xyz@abc.com', layout: 'split', titleTag: 'h3' })
+              c.a.createElement(U.a, { email: 'xyz@abc.com', layout: 'split', titleTag: 'h3' })
             )
           );
         }),
@@ -275,16 +275,16 @@
       t.default = function(e) {
         var t = e.match.url;
         return c.a.createElement(
-          r.d,
+          l.d,
           null,
-          c.a.createElement(r.b, { path: ''.concat(t, '/login'), exact: !0, component: x }),
-          c.a.createElement(r.b, { path: ''.concat(t, '/logout'), exact: !0, component: w }),
-          c.a.createElement(r.b, { path: ''.concat(t, '/register'), exact: !0, component: k }),
-          c.a.createElement(r.b, { path: ''.concat(t, '/forget-password'), exact: !0, component: z }),
-          c.a.createElement(r.b, { path: ''.concat(t, '/confirm-mail'), exact: !0, component: H }),
-          c.a.createElement(r.b, { path: ''.concat(t, '/password-reset'), exact: !0, component: J }),
-          c.a.createElement(r.b, { path: ''.concat(t, '/lock-screen'), exact: !0, component: W }),
-          c.a.createElement(r.a, { to: '/errors/404' })
+          c.a.createElement(l.b, { path: ''.concat(t, '/login'), exact: !0, component: x }),
+          c.a.createElement(l.b, { path: ''.concat(t, '/logout'), exact: !0, component: w }),
+          c.a.createElement(l.b, { path: ''.concat(t, '/register'), exact: !0, component: k }),
+          c.a.createElement(l.b, { path: ''.concat(t, '/forget-password'), exact: !0, component: z }),
+          c.a.createElement(l.b, { path: ''.concat(t, '/confirm-mail'), exact: !0, component: H }),
+          c.a.createElement(l.b, { path: ''.concat(t, '/password-reset'), exact: !0, component: R }),
+          c.a.createElement(l.b, { path: ''.concat(t, '/lock-screen'), exact: !0, component: W }),
+          c.a.createElement(l.a, { to: '/errors/404' })
         );
       };
     },
@@ -292,19 +292,19 @@
       'use strict';
       var n = a(78),
         c = a(77),
-        r = a(0),
-        l = a.n(r),
+        l = a(0),
+        r = a.n(l),
         s = a(5),
         o = a.n(s),
         i = function(e) {
           var t,
             a = e.justify,
-            r = e.align,
+            l = e.align,
             s = e.className,
             i = e.tag,
             m = e.children,
             u = Object(c.a)(e, ['justify', 'align', 'className', 'tag', 'children']);
-          return l.a.createElement(
+          return r.a.createElement(
             i,
             Object.assign(
               {
@@ -312,7 +312,7 @@
                   'd-flex',
                   ((t = {}),
                   Object(n.a)(t, 'justify-content-'.concat(a), a),
-                  Object(n.a)(t, 'align-items-'.concat(r), r),
+                  Object(n.a)(t, 'align-items-'.concat(l), l),
                   t),
                   s
                 )
@@ -328,8 +328,8 @@
       'use strict';
       var n = a(4),
         c = a(7),
-        r = a(0),
-        l = a.n(r),
+        l = a(0),
+        r = a.n(l),
         s = a(1),
         o = a.n(s),
         i = a(5),
@@ -353,7 +353,7 @@
         d = function(e) {
           var t,
             a = e.body,
-            r = e.bottom,
+            l = e.bottom,
             s = e.className,
             o = e.cssModule,
             i = e.heading,
@@ -387,15 +387,15 @@
                 'media-left': p,
                 'media-right': g,
                 'media-top': h,
-                'media-bottom': r,
+                'media-bottom': l,
                 'media-middle': f,
                 'media-object': b,
                 'media-list': d,
-                media: !a && !i && !p && !g && !h && !r && !f && !b && !d
+                media: !a && !i && !p && !g && !h && !l && !f && !b && !d
               }),
               o
             );
-          return l.a.createElement(x, Object(n.a)({}, j, { className: N }));
+          return r.a.createElement(x, Object(n.a)({}, j, { className: N }));
         };
       (d.propTypes = p), (t.a = d);
     }

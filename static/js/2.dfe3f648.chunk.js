@@ -584,7 +584,7 @@
         };
       e.exports = h;
     },
-    1922: function(e, t, n) {
+    1920: function(e, t, n) {
       'use strict';
       function r(e) {
         return Object.prototype.toString.call(e).slice(8, -1);
@@ -4318,7 +4318,7 @@
             u = n(201),
             p = n(805),
             f = (n(1), n(998)),
-            d = n(1922),
+            d = n(1920),
             h = function(e, t) {
               for (var n = [e[0]], r = 0, o = t.length; r < o; r += 1) n.push(t[r], e[r + 1]);
               return n;

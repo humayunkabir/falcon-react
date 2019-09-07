@@ -468,10 +468,10 @@
         f = t.n(p),
         w = t(288),
         B = t.n(w),
-        D = t(303),
-        I = t.n(D),
-        N = t(304),
-        C = t.n(N),
+        N = t(303),
+        D = t.n(N),
+        I = t(304),
+        C = t.n(I),
         O = [
           {
             avatar: { src: o.a, size: 'xl' },
@@ -568,7 +568,7 @@
             to: '#!'
           },
           {
-            avatar: { src: I.a, size: 'xl' },
+            avatar: { src: D.a, size: 'xl' },
             children: '<strong>University of Oxford</strong> created an event : "Causal Inference Hilary 2019"',
             time: '1w',
             emoji: '\u270c\ufe0f',
@@ -1029,9 +1029,9 @@
         f = t(204),
         w = t(191),
         B = t(310),
-        D = t(281),
-        I = t(268),
-        N = t.n(I),
+        N = t(281),
+        D = t(268),
+        I = t.n(D),
         C = t(109),
         O = t(194),
         x = t.n(O),
@@ -1087,10 +1087,10 @@
         };
       Y.defaultProps = { linkText: 'See all', to: '#!', color: 'primary' };
       var F = Y,
-        R = t(65),
-        k = t(153),
-        T = t(138),
-        L = t(139),
+        k = t(65),
+        R = t(153),
+        L = t(138),
+        T = t(139),
         P = t(141),
         S = t(140),
         U = t(142),
@@ -1121,7 +1121,7 @@
         ee = (function(e) {
           function a() {
             var e, t;
-            Object(T.a)(this, a);
+            Object(L.a)(this, a);
             for (var n = arguments.length, o = new Array(n), r = 0; r < n; r++) o[r] = arguments[r];
             return (
               ((t = Object(P.a)(this, (e = Object(S.a)(a)).call.apply(e, [this].concat(o))))._isMounted = !1),
@@ -1136,12 +1136,12 @@
               (t.simulateActiveUsers = function() {
                 t.refreshInterval = setInterval(function() {
                   var e = Math.floor(60 * Math.random() + 60),
-                    a = Object(k.a)(t.state.activeUserHistory);
+                    a = Object(R.a)(t.state.activeUserHistory);
                   a.shift(),
                     t._isMounted &&
                       t.setState({ activeUserHistory: a }, function() {
                         t.refreshTimeout = setTimeout(function() {
-                          var a = Object(k.a)(t.state.activeUserHistory);
+                          var a = Object(R.a)(t.state.activeUserHistory);
                           a.push(e), t._isMounted && t.setState({ activeUserHistory: a, currentActiveUser: e });
                         }, 500);
                       });
@@ -1152,7 +1152,7 @@
           }
           return (
             Object(U.a)(a, e),
-            Object(L.a)(a, [
+            Object(T.a)(a, [
               {
                 key: 'componentDidMount',
                 value: function() {
@@ -1168,9 +1168,9 @@
               {
                 key: 'render',
                 value: function() {
-                  var e = Object(R.a)({}, this.state.chartData, {
+                  var e = Object(k.a)({}, this.state.chartData, {
                     datasets: [
-                      Object(R.a)({}, this.state.chartData.datasets[0], { data: this.state.activeUserHistory })
+                      Object(k.a)({}, this.state.chartData.datasets[0], { data: this.state.activeUserHistory })
                     ]
                   });
                   return o.a.createElement(
@@ -1360,7 +1360,7 @@
                 B.a,
                 { className: 'text-white align-items-center no-gutters' },
                 o.a.createElement(
-                  D.a,
+                  N.a,
                   null,
                   o.a.createElement('h4', { className: 'text-white mb-0' }, 'Today $764.39'),
                   o.a.createElement(
@@ -1371,7 +1371,7 @@
                   )
                 ),
                 o.a.createElement(
-                  D.a,
+                  N.a,
                   { xs: 'auto', className: 'd-none d-sm-block' },
                   o.a.createElement(
                     f.a,
@@ -1459,7 +1459,7 @@
                 o.a.createElement(
                   F,
                   { content: '43,594', rate: '9.54%', title: 'Revenue', color: 'success', linkText: 'Statistics' },
-                  o.a.createElement(N.a, { end: 43594, duration: 5, prefix: '$', separator: ',', decimal: '.' })
+                  o.a.createElement(I.a, { end: 43594, duration: 5, prefix: '$', separator: ',', decimal: '.' })
                 )
               ),
               o.a.createElement(
@@ -1518,8 +1518,8 @@
               o.a.createElement(
                 B.a,
                 { noGutters: !0 },
-                o.a.createElement(D.a, { lg: '4', className: 'pr-lg-2' }, o.a.createElement(ee, null)),
-                o.a.createElement(D.a, { lg: '8', className: 'pl-lg-2' }, o.a.createElement(le, null))
+                o.a.createElement(N.a, { lg: '4', className: 'pr-lg-2' }, o.a.createElement(ee, null)),
+                o.a.createElement(N.a, { lg: '8', className: 'pl-lg-2' }, o.a.createElement(le, null))
               )
             )
           );
@@ -1549,14 +1549,14 @@
         fe = t(676),
         we = t(677),
         Be = t(678),
-        De = t(108),
-        Ie = t(136),
-        Ne = t.n(Ie),
+        Ne = t(108),
+        De = t(136),
+        Ie = t.n(De),
         Ce = function() {
           return o.a.createElement(
             pe.a,
             { nav: !0, inNavbar: !0 },
-            o.a.createElement(fe.a, { nav: !0, className: 'pr-0' }, o.a.createElement(De.a, { src: Ne.a })),
+            o.a.createElement(fe.a, { nav: !0, className: 'pr-0' }, o.a.createElement(Ne.a, { src: Ie.a })),
             o.a.createElement(
               we.a,
               { right: !0, className: 'dropdown-menu-card' },
@@ -1623,10 +1623,10 @@
                       onClick: function(e) {
                         e.preventDefault();
                         var n = a.map(function(e) {
-                            return e.hasOwnProperty('unread') ? Object(R.a)({}, e, { unread: !1 }) : e;
+                            return e.hasOwnProperty('unread') ? Object(k.a)({}, e, { unread: !1 }) : e;
                           }),
                           o = c.map(function(e) {
-                            return e.hasOwnProperty('unread') ? Object(R.a)({}, e, { unread: !1 }) : e;
+                            return e.hasOwnProperty('unread') ? Object(k.a)({}, e, { unread: !1 }) : e;
                           });
                         t(n), l(o);
                       }
@@ -1671,17 +1671,14 @@
             t = e.setShowBurgerMenu;
           return o.a.createElement(
             me.a,
-            {
-              light: !0,
-              className: 'navbar-glass fs--1 font-weight-semi-bold row navbar-top sticky-kit',
-              expand: 'xs'
-            },
+            { light: !0, className: 'navbar-glass fs--1 font-weight-semi-bold row navbar-top sticky-kit', expand: !0 },
             o.a.createElement(ue.a, {
               onClick: function() {
                 return t(!a);
-              }
+              },
+              id: 'burgerMenu'
             }),
-            o.a.createElement(Ee.a, { at: 'navbar-top', width: 40 }),
+            o.a.createElement(Ee.a, { at: 'navbar-top', width: 40, id: 'topLogo' }),
             o.a.createElement(
               ge.a,
               { navbar: !0 },
@@ -1714,16 +1711,17 @@
         Fe = Object(l.g)(function e(a) {
           var t = a.routes,
             r = a.location,
-            c = Object(n.useState)(null),
-            l = Object(h.a)(c, 2),
-            i = l[0],
-            m = l[1];
+            c = a.handleNavbarVerticalCollapse,
+            l = Object(n.useState)(null),
+            i = Object(h.a)(l, 2),
+            m = i[0],
+            u = i[1];
           Object(n.useEffect)(function() {
             var e = null;
             t.forEach(function(a, t) {
               0 === r.pathname.indexOf(a.to) && (e = t);
             }),
-              m(e);
+              u(e);
           }, []);
           return t.map(function(a, t) {
             return a.children
@@ -1736,18 +1734,22 @@
                       to: '#',
                       onClick: function() {
                         return (function(e) {
-                          return m(i === e ? null : e);
+                          return u(m === e ? null : e);
                         })(t);
                       },
                       className: 'nav-link dropdown-indicator',
-                      'aria-expanded': i === t
+                      'aria-expanded': m === t
                     },
                     o.a.createElement(Ye, { route: a })
                   ),
                   o.a.createElement(
                     ge.a,
-                    { isOpen: i === t },
-                    o.a.createElement(Ae.a, null, o.a.createElement(e, { routes: a.children, location: r }))
+                    { isOpen: m === t },
+                    o.a.createElement(
+                      Ae.a,
+                      null,
+                      o.a.createElement(e, { routes: a.children, location: r, handleNavbarVerticalCollapse: c })
+                    )
                   )
                 )
               : o.a.createElement(
@@ -1755,79 +1757,86 @@
                   { key: t },
                   o.a.createElement(
                     s.c,
-                    Object.assign({ className: 'nav-link' }, a),
+                    Object.assign({ className: 'nav-link' }, a, { onClick: c }),
                     o.a.createElement(Ye, { route: a })
                   )
                 );
           });
         }),
-        Re = function() {
+        ke = function() {
           var e = Object(n.useContext)(E),
             a = e.isFluid,
             t = e.setFluid,
             r = e.isRTL,
             c = e.setRTL,
-            s = e.showBurgerMenu;
-          return (
-            Object(n.useEffect)(
-              function() {
-                console.log('Rendered!', a);
-              },
-              [a]
-            ),
+            s = e.showBurgerMenu,
+            l = e.setShowBurgerMenu;
+          return o.a.createElement(
+            me.a,
+            { expand: Ge.a, className: 'navbar-vertical navbar-glass', light: !0 },
+            o.a.createElement(Ee.a, { at: 'navbar-vertical', width: 40 }),
             o.a.createElement(
-              me.a,
-              { expand: Ge.a, className: 'navbar-vertical navbar-glass', light: !0 },
-              o.a.createElement(Ee.a, { at: 'navbar-vertical', width: 40 }),
+              ge.a,
+              { navbar: !0, isOpen: s },
               o.a.createElement(
-                ge.a,
-                { navbar: !0, isOpen: s },
-                o.a.createElement(Ae.a, { navbar: !0, vertical: !0 }, o.a.createElement(Fe, { routes: Me.b })),
+                Ae.a,
+                { navbar: !0, vertical: !0 },
+                o.a.createElement(Fe, {
+                  routes: Me.b,
+                  handleNavbarVerticalCollapse: function() {
+                    return (
+                      (function() {
+                        var e = document.getElementById('burgerMenu');
+                        return !('none' === getComputedStyle(e).display);
+                      })() && l(!s)
+                    );
+                  }
+                })
+              ),
+              o.a.createElement(
+                'div',
+                { className: 'px-3 px-'.concat(Ge.a, '-0') },
+                o.a.createElement('hr', { className: 'border-300 my-3' }),
+                o.a.createElement(
+                  'h6',
+                  { className: 'text-uppercase fs--2 font-weight-semi-bold ls text-600' },
+                  'Settings'
+                ),
                 o.a.createElement(
                   'div',
-                  { className: 'px-3 px-'.concat(Ge.a, '-0') },
-                  o.a.createElement('hr', { className: 'border-300 my-3' }),
-                  o.a.createElement(
-                    'h6',
-                    { className: 'text-uppercase fs--2 font-weight-semi-bold ls text-600' },
-                    'Settings'
-                  ),
-                  o.a.createElement(
-                    'div',
-                    {
-                      className: 'bg-light border py-card rounded',
-                      style: { paddingLeft: '1.4375rem', paddingRight: '1.4375rem' }
-                    },
-                    o.a.createElement(f.a, {
-                      type: 'checkbox',
-                      id: 'rtl',
-                      name: 'rtl',
-                      label: 'RTL Layout',
-                      checked: r,
-                      onChange: function(e) {
-                        var a = e.target;
-                        return c(a.checked);
-                      }
-                    }),
-                    o.a.createElement(f.a, {
-                      type: 'checkbox',
-                      id: 'fluid',
-                      name: 'fluid',
-                      label: 'Fluid Container',
-                      checked: a,
-                      onChange: function(e) {
-                        var a = e.target;
-                        return t(a.checked);
-                      }
-                    })
-                  )
-                ),
-                o.a.createElement(w.a, { color: 'primary', size: 'sm', block: !0, className: 'my-3' }, 'Purchase')
-              )
+                  {
+                    className: 'bg-light border py-card rounded',
+                    style: { paddingLeft: '1.4375rem', paddingRight: '1.4375rem' }
+                  },
+                  o.a.createElement(f.a, {
+                    type: 'checkbox',
+                    id: 'rtl',
+                    name: 'rtl',
+                    label: 'RTL Layout',
+                    checked: r,
+                    onChange: function(e) {
+                      var a = e.target;
+                      return c(a.checked);
+                    }
+                  }),
+                  o.a.createElement(f.a, {
+                    type: 'checkbox',
+                    id: 'fluid',
+                    name: 'fluid',
+                    label: 'Fluid Container',
+                    checked: a,
+                    onChange: function(e) {
+                      var a = e.target;
+                      return t(a.checked);
+                    }
+                  })
+                )
+              ),
+              o.a.createElement(w.a, { color: 'primary', size: 'sm', block: !0, className: 'my-3' }, 'Purchase')
             )
           );
         },
-        ke = function() {
+        Re = function() {
           return o.a.createElement(
             'footer',
             null,
@@ -1835,7 +1844,7 @@
               B.a,
               { noGutters: !0, className: 'justify-content-between text-center fs--1 mt-4 mb-3' },
               o.a.createElement(
-                D.a,
+                N.a,
                 { sm: 'auto' },
                 o.a.createElement(
                   'p',
@@ -1849,31 +1858,43 @@
                   o.a.createElement('a', { href: 'https://themewagon.com' }, 'Themewagon')
                 )
               ),
-              o.a.createElement(D.a, { sm: 'auto' }, o.a.createElement('p', { className: 'mb-0 text-600' }, 'v', Ge.b))
+              o.a.createElement(N.a, { sm: 'auto' }, o.a.createElement('p', { className: 'mb-0 text-600' }, 'v', Ge.b))
             )
           );
         },
-        Te = Object(ce.a)(function() {
+        Le = Object(ce.a)(function() {
           return Promise.all([t.e(1), t.e(2), t.e(6), t.e(8)]).then(t.bind(null, 1925));
         }),
-        Le = function() {
-          var e = Object(n.useContext)(E).isFluid;
-          return o.a.createElement(
-            'div',
-            { className: e ? 'container-fluid' : 'container' },
-            o.a.createElement(Re, null),
+        Te = function(e) {
+          var a = e.location,
+            t = Object(n.useContext)(E).isFluid;
+          return (
+            Object(n.useEffect)(function() {
+              Le.preload();
+            }, []),
+            Object(n.useEffect)(
+              function() {
+                window.scrollTo(0, 0);
+              },
+              [a.pathname]
+            ),
             o.a.createElement(
               'div',
-              { className: 'content' },
-              o.a.createElement(ye, null),
+              { className: t ? 'container-fluid' : 'container' },
+              o.a.createElement(ke, null),
               o.a.createElement(
-                l.d,
-                null,
-                o.a.createElement(l.b, { path: '/', exact: !0, component: ie }),
-                o.a.createElement(Te, null),
-                o.a.createElement(l.a, { to: '/errors/404' })
-              ),
-              o.a.createElement(ke, null)
+                'div',
+                { className: 'content' },
+                o.a.createElement(ye, null),
+                o.a.createElement(
+                  l.d,
+                  null,
+                  o.a.createElement(l.b, { path: '/', exact: !0, component: ie }),
+                  o.a.createElement(Le, null),
+                  o.a.createElement(l.a, { to: '/errors/404' })
+                ),
+                o.a.createElement(Re, null)
+              )
             )
           );
         },
@@ -1941,7 +1962,7 @@
               B.a,
               { className: 'flex-center min-vh-100 py-6' },
               o.a.createElement(
-                D.a,
+                N.a,
                 { sm: 11, md: 9, lg: 7, xl: 6, className: 'col-xxl-5' },
                 o.a.createElement(Ee.a, null),
                 o.a.createElement(
@@ -1967,15 +1988,11 @@
         We = Object(ce.a)(function() {
           return Promise.all([t.e(0), t.e(11)]).then(t.bind(null, 1928));
         }),
-        Xe = Object(l.g)(function(e) {
-          var a = e.location;
+        Xe = function() {
           return (
-            Object(n.useEffect)(
-              function() {
-                window.scrollTo(0, 0);
-              },
-              [a.pathname]
-            ),
+            Object(n.useEffect)(function() {
+              Je.preload(), Ke.preload(), Ve.preload(), We.preload();
+            }, []),
             o.a.createElement(
               s.a,
               { fallback: o.a.createElement('span', null) },
@@ -1987,7 +2004,7 @@
                 o.a.createElement(l.b, { path: '/authentication/card', component: Ve }),
                 o.a.createElement(l.b, { path: '/authentication/split', component: We }),
                 o.a.createElement(l.b, { path: '/errors', component: ze }),
-                o.a.createElement(l.b, { component: Le })
+                o.a.createElement(l.b, { component: Te })
               ),
               o.a.createElement(i.a, {
                 transition: u,
@@ -1996,7 +2013,7 @@
               })
             )
           );
-        }),
+        },
         qe = (t(664),
         t(665),
         t(666),
@@ -2019,7 +2036,7 @@
         _e = (function(e) {
           function a() {
             var e, t;
-            Object(T.a)(this, a);
+            Object(L.a)(this, a);
             for (var n = arguments.length, o = new Array(n), r = 0; r < n; r++) o[r] = arguments[r];
             return (
               ((t = Object(P.a)(this, (e = Object(S.a)(a)).call.apply(e, [this].concat(o)))).setFluid = function(e) {
@@ -2044,7 +2061,7 @@
           }
           return (
             Object(U.a)(a, e),
-            Object(L.a)(a, [
+            Object(T.a)(a, [
               {
                 key: 'componentDidMount',
                 value: function() {
