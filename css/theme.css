@@ -14870,8 +14870,6 @@ label {
 
 .navbar .dropdown-item {
   font-weight: 500;
-  padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
 }
 
 .navbar .dropdown-item:hover, .navbar .dropdown-item:focus {
