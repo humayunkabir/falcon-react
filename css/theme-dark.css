@@ -18893,8 +18893,6 @@ a.text-white:hover, a.text-white:focus {
 }
 
 .theme-wizard .nav-link {
-  display: -webkit-box;
-  display: flex;
   padding-left: 0;
   padding-right: 0;
   width: 100%;
@@ -19034,12 +19032,6 @@ a.text-white:hover, a.text-white:focus {
   width: 340px;
   -webkit-transform: translateY(-73%);
   transform: translateY(-73%);
-}
-
-.theme-wizard button.nav-link[type='submit'] {
-  background-color: transparent;
-  border: 0;
-  outline: 0;
 }
 
 /*-----------------------------------------------
