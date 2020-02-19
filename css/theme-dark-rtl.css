@@ -14550,6 +14550,9 @@ label {
   .navbar-vertical-collapsed .navbar-vertical-divider {
     padding-left: 0.75rem !important;
   }
+  .navbar-vertical-collapsed:not(.navbar-vertical-collapsed-hover) .navbar-vertical.navbar-expand-xxl .ScrollbarsCustom-Wrapper {
+    bottom: -29px !important;
+  }
   .navbar-vertical-collapsed:not(.navbar-vertical-collapsed-hover) .navbar-vertical.navbar-expand-xxl .navbar-collapse .nav,
   .navbar-vertical-collapsed:not(.navbar-vertical-collapsed-hover) .navbar-vertical.navbar-expand-xxl .collapse.show .nav {
     display: none;
@@ -14612,6 +14615,9 @@ label {
   }
   .navbar-vertical-collapsed .navbar-vertical-divider {
     padding-left: 0.75rem !important;
+  }
+  .navbar-vertical-collapsed:not(.navbar-vertical-collapsed-hover) .navbar-vertical.navbar-expand-xl .ScrollbarsCustom-Wrapper {
+    bottom: -29px !important;
   }
   .navbar-vertical-collapsed:not(.navbar-vertical-collapsed-hover) .navbar-vertical.navbar-expand-xl .navbar-collapse .nav,
   .navbar-vertical-collapsed:not(.navbar-vertical-collapsed-hover) .navbar-vertical.navbar-expand-xl .collapse.show .nav {
@@ -14676,6 +14682,9 @@ label {
   .navbar-vertical-collapsed .navbar-vertical-divider {
     padding-left: 0.75rem !important;
   }
+  .navbar-vertical-collapsed:not(.navbar-vertical-collapsed-hover) .navbar-vertical.navbar-expand-lg .ScrollbarsCustom-Wrapper {
+    bottom: -29px !important;
+  }
   .navbar-vertical-collapsed:not(.navbar-vertical-collapsed-hover) .navbar-vertical.navbar-expand-lg .navbar-collapse .nav,
   .navbar-vertical-collapsed:not(.navbar-vertical-collapsed-hover) .navbar-vertical.navbar-expand-lg .collapse.show .nav {
     display: none;
@@ -14739,6 +14748,9 @@ label {
   .navbar-vertical-collapsed .navbar-vertical-divider {
     padding-left: 0.75rem !important;
   }
+  .navbar-vertical-collapsed:not(.navbar-vertical-collapsed-hover) .navbar-vertical.navbar-expand-md .ScrollbarsCustom-Wrapper {
+    bottom: -29px !important;
+  }
   .navbar-vertical-collapsed:not(.navbar-vertical-collapsed-hover) .navbar-vertical.navbar-expand-md .navbar-collapse .nav,
   .navbar-vertical-collapsed:not(.navbar-vertical-collapsed-hover) .navbar-vertical.navbar-expand-md .collapse.show .nav {
     display: none;
@@ -14801,6 +14813,9 @@ label {
   }
   .navbar-vertical-collapsed .navbar-vertical-divider {
     padding-left: 0.75rem !important;
+  }
+  .navbar-vertical-collapsed:not(.navbar-vertical-collapsed-hover) .navbar-vertical.navbar-expand-sm .ScrollbarsCustom-Wrapper {
+    bottom: -29px !important;
   }
   .navbar-vertical-collapsed:not(.navbar-vertical-collapsed-hover) .navbar-vertical.navbar-expand-sm .navbar-collapse .nav,
   .navbar-vertical-collapsed:not(.navbar-vertical-collapsed-hover) .navbar-vertical.navbar-expand-sm .collapse.show .nav {
@@ -14871,6 +14886,10 @@ label {
 
 .navbar-vertical-collapsed .navbar-vertical-divider {
   padding-left: 0.75rem !important;
+}
+
+.navbar-vertical-collapsed:not(.navbar-vertical-collapsed-hover) .navbar-vertical.navbar-expand-xs .ScrollbarsCustom-Wrapper {
+  bottom: -29px !important;
 }
 
 .navbar-vertical-collapsed:not(.navbar-vertical-collapsed-hover) .navbar-vertical.navbar-expand-xs .navbar-collapse .nav,
