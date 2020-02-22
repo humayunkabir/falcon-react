@@ -20308,6 +20308,10 @@ a.text-white:hover, a.text-white:focus {
   color: #061325 !important;
 }
 
+.navbar-vertical-collapsed .navbar-vertical .navbar-collapse {
+  box-shadow: none !important;
+}
+
 /*-----------------------------------------------
 |   User Styles
 -----------------------------------------------*/
